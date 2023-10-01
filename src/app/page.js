@@ -4,7 +4,9 @@ export default function Home() {
 
   return (
     <main className="text-center min-h-[120vh]">
-      <h1>Kausar Associates Home page</h1>
+      <h1>
+        Kausar Associates Home page 
+      </h1>
     </main>
   )
 }
