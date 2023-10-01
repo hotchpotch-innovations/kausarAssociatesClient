@@ -1,12 +1,11 @@
 import Navbar from "@/components/common/Navbar";
+import Hero from "@/components/homepage/hero/Hero";
 
 export default function Home() {
 
   return (
-    <main className="text-center min-h-[120vh]">
-      <h1>
-        Kausar Associates Home page 
-      </h1>
+    <main>
+      <Hero></Hero>
     </main>
   )
 }
