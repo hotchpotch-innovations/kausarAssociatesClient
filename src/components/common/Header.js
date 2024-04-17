@@ -8,7 +8,7 @@ import {MdLocationOn} from 'react-icons/md';
 const Header = () => {
     return (
         <header>
-           <div className="w-full bg-primary py-2 px-2 lg:px-4">
+           <div className="w-full bg-primary py-2 px-2 lg:px-4 text-white">
             <div className="flex justify-between items-center">
                 <div className="hidden lg:flex justify-start items-center text-xs">
                     <div className="mx-2">
@@ -17,7 +17,7 @@ const Header = () => {
                     </div>
                     <div className="mx-2">
                         <GrMail className="inline text-base"/>
-                    <span className="ml-1">revenueaid@gmail.com</span>
+                    <span className="ml-1">kausarandassociates@gamil.com</span>
                     </div>
                     
                     <div className="mx-2">
@@ -48,7 +48,7 @@ const Header = () => {
                         <span className='text-xs'>Have any Question</span>
                         </div>
                         <div>
-                            <button className="px-2 lg:px-4 py-1 text-primary rounded-full bg-white hover:bg-[#4169E1] hover:text-white transition duration-300 ease-in-out">
+                            <button className="px-2 lg:px-4 py-1 text-primary rounded-full bg-white hover:bg-blue-400 hover:text-white transition duration-300 ease-in-out">
                                 Get Apponintment
                             </button>
                         </div>
