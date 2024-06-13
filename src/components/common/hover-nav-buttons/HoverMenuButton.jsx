@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import HoverSubmenuButton from "./HoverSubmenuButton";
 import { useDispatch } from "react-redux";
 import { useRouter } from "next/navigation";
@@ -7,12 +7,20 @@ import { hamburgerToggle } from "../../../../provider/redux/features/navbarSlice
 import ServiceSubmenuSection from "./submenu-sections/ServiceSubmenuSection";
 import IncorporationSubmenuSection from "./submenu-sections/IncorporationSubmenuSection";
 import LicensingSubmenuSection from "./submenu-sections/LicensingSubmenuSection";
+import { useScrollLock } from "@/hooks/useScrollLock";
 
-const HoverMenuButton = ({ nav }) => {
+/*
+ * @params idx is used to track the index of the menu and those who have sub menu we won't allow link pushing
+ */
+
+const HoverMenuButton = ({ nav, idx }) => {
   const router = useRouter();
   const dispatch = useDispatch();
 
   const menuLinkHandler = (link) => {
+    // those who have sub cat we don't want to have click effect on them
+    if (idx === 1 || idx === 2 || idx === 4 || idx === 6) return;
+
     dispatch(hamburgerToggle());
     router.push(link);
   };
@@ -28,10 +36,10 @@ const HoverMenuButton = ({ nav }) => {
             onClick={() =>
               menuLinkHandler(`${!nav?.submenu?.length > 0 ? route : ""}`)
             }
-            className="cursor-pointer px-2"
+            className="cursor-pointer px-1 xl:px-2"
           >
-            <button className="group-hover:text-blue-800 duration-600">
-              {nav?.menu.toUpperCase()}
+            <button className="group-hover:text-blue-800 duration-600 text-sm 2xl:text-base">
+              {nav?.menu}
             </button>
           </p>
         </div>
@@ -42,9 +50,11 @@ const HoverMenuButton = ({ nav }) => {
           <div
             className={`${
               submenu.length > 0 &&
-              " w-full lg:w-72 h-96 overflow-auto bg-blue-100 p-2 lg:p-3 rounded-sm"
+              " w-full lg:w-72 min-h-fit max-h-96 overflow-auto bg-blue-100 p-2 lg:p-3 rounded-sm"
             } hidden hover:block transition-all duration-500 group-hover:block lg:group-hover:border-t-2 border-blue-600 mt-0 lg:mt-4`}
           >
+            {nav.menu === "About" && <HoverSubmenuButton submenu={submenu} />}
+
             {nav.menu === "Services" && <ServiceSubmenuSection />}
 
             {nav.menu === "Incorporations" && <IncorporationSubmenuSection />}

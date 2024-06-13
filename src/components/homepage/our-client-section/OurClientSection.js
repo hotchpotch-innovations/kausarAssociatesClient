@@ -14,22 +14,75 @@ const OurClientSection = () => {
   // });
   // console.log(data);
   return (
-    <section className="content-container">
-      <div className="">
+    <section className=" overflow-hidden">
+      <div className="content-container">
         <AbsoluteText
           text={"OUR CLIENT"}
           isTextCenter={true}
           isTextWhite={false}
         ></AbsoluteText>
       </div>
-      <div>
-        <div className="flex">
+      <div className="flex flex-col gap-4 md:gap-6 xl:gap-10">
+        <div className="flex slide-client-carousel">
           <Client></Client>
           <Client></Client>
           <Client></Client>
           <Client></Client>
           <Client></Client>
           <Client></Client>
+          {/* ////////////// */}
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          {/* ////////////// */}
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          {/* ////////////// */}
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          {/* ////////////// */}
+        </div>
+        {/* ///// */}
+        <div className="flex slide-client-carousel-2">
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          {/* ////////////// */}
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          {/* ////////////// */}
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          {/* ////////////// */}
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          {/* ////////////// */}
         </div>
       </div>
     </section>

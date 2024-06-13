@@ -1,25 +1,29 @@
+import Link from "next/link";
 import React from "react";
-import logo from './logo/KA_LOGO-01.png';
-import Image from "next/image";
 
 const InfoPart = () => {
   return (
     <div className="col-span-2">
-      <div>
-        <Image src={logo} alt="" className="w-2/3 h-32"></Image>
-      </div>
-      <div>
-        <p className="text-justify text-xs">
-          is simply dummy text of the printing and typesetting industry. Lorem
-          Ipsum has been the industry standard dummy text ever since the 1500s,
-          when an unknown printer took a galley of type and scrambled it to make
-          a type specimen book. It has survived not only five centuries, but
-          also the leap into electronic typesetting, remaining essentially
-          unchanged. It was popularised in the 1960s with the release of
-          Letraset sheets containing Lorem Ipsum passages, and more recently
-          with desktop publishing software like Aldus PageMaker including
-          versions of Lorem Ipsum.
-        </p>
+      <p className="text-justify text-xs">
+        is simply dummy text of the printing and typesetting industry. Lorem
+        Ipsum has been the industry standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book.
+      </p>
+
+      <div className="flex items-center gap-4 md:gap-6 xl:gap-8 mt-5 md:mt-7 xl:mt-9">
+        <Link
+          href={"/term-and-conditions"}
+          className="text-sm text-gray-400 hover:text-white transition duration-300 ease-in-out font-semibold"
+        >
+          Terms & Conditions
+        </Link>
+        <Link
+          href={"/privacy-policy"}
+          className="text-sm text-gray-400 hover:text-white transition duration-300 ease-in-out font-semibold"
+        >
+          Privacy Policy
+        </Link>
       </div>
     </div>
   );

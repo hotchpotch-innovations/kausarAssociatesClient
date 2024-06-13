@@ -1,6 +1,10 @@
+"use client";
+
 import AbsoluteText from "@/components/common/absoluteText/AbsoluteText";
 import React from "react";
 import ArticleCard from "./ArticleCard";
+import { articleData } from "@/data";
+import { useState } from "react";
 
 const BanglaArticlesSection = () => {
   return (
@@ -19,13 +23,12 @@ const BanglaArticlesSection = () => {
         </div>
         {/* Articles Section */}
         <div className="content-container">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-            <ArticleCard></ArticleCard>
-            <ArticleCard></ArticleCard>
-            <ArticleCard></ArticleCard>
-            <ArticleCard></ArticleCard>
-            <ArticleCard></ArticleCard>
-            <ArticleCard></ArticleCard>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 sm:gap-3">
+            {articleData?.map((data, idx) => (
+              <ArticleCard
+                key={idx}
+              ></ArticleCard>
+            ))}
           </div>
         </div>
       </div>

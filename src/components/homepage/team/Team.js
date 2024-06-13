@@ -9,8 +9,8 @@ const Team = () => {
         <div>
           <AbsoluteText text={"TEAM"} isTextWhite={false}></AbsoluteText>
         </div>
-        <div className="px-8 md:px-10 lg:px-12">
-          <Slider/>
+        <div className="sm:px-8 md:px-10 lg:px-12">
+          <Slider />
         </div>
       </div>
     </section>

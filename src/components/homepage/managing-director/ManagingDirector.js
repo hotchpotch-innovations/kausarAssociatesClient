@@ -24,11 +24,10 @@ const ManagingDirector = () => {
                 </button>
               </div>
             </div>
-
           </div>
 
-          <div className="w-full md:w-full lg:w-1/2 mt-8 md:mt-0 lg:mt-0">
-            <div className="w-5/6 px-6 py-12  mx-auto">
+          <div className="w-full md:w-full lg:w-1/2 mt-4 sm:mt-0 lg:mt-0">
+            <div className="sm:w-5/6 px-6 py-8 sm:py-12  mx-auto">
               <div className="flex justify-start items-end">
                 <div>
                   <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold text-primary">
@@ -41,16 +40,28 @@ const ManagingDirector = () => {
                 Md. Kausar Hossain
               </h3>
               <p className="text-sm leading-5">Managing Director</p>
-              <p className="text-xs leading-5 text-primary font-semibold">Kausar & Associates Limited</p>
+              <p className="text-xs leading-5 text-primary font-semibold">
+                Kausar & Associates Limited
+              </p>
               <p className="text-xs leading-5 ">
-                Ex Executive Director & Sr. Consultant at <span className="hover:text-blue-600 cursor-pointer">Rahamat & Associates
-                Limited</span>
+                Ex Executive Director & Sr. Consultant at{" "}
+                <span className="hover:text-blue-600 cursor-pointer">
+                  Rahamat & Associates Limited
+                </span>
               </p>
               <p className="text-xs leading-5">
-                LL.M at <span className="hover:text-blue-600 cursor-pointer">Shanto-Mariam University</span> of Creative Technology, Dhaka
+                LL.M at{" "}
+                <span className="hover:text-blue-600 cursor-pointer">
+                  Shanto-Mariam University
+                </span>{" "}
+                of Creative Technology, Dhaka
               </p>
               <p className="text-xs leading-5">
-                LL.B at <span className="hover:text-blue-600 cursor-pointer">Shanto-Mariam University</span> of Creative Technology, Dhaka
+                LL.B at{" "}
+                <span className="hover:text-blue-600 cursor-pointer">
+                  Shanto-Mariam University
+                </span>{" "}
+                of Creative Technology, Dhaka
               </p>
               <p className="text-xs leading-5 ">Contact:</p>
               <p className="text-xs leading-5 ">Cell: +8801912 527467</p>

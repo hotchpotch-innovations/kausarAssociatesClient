@@ -6,7 +6,7 @@ import KAInput from "@/components/forms/inputs/KAInput";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { toast } from "sonner";
 import { z } from "zod";
-import "react-quill/dist/quill.snow.css";
+// import "react-quill/dist/quill.snow.css";
 
 const validationSchema = z.object({
   title: z.string(),

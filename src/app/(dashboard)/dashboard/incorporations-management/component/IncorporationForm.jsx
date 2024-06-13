@@ -35,7 +35,6 @@ const validationSchema = z.object({
 });
 
 const IncorporationForm = () => {
-  
   const submitHandler = async (data) => {
     console.log(data);
   };

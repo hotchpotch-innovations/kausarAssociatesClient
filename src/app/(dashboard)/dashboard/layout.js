@@ -5,6 +5,11 @@ import DashboardSidebar from "./partials/dashboard-sidebar/DashboardSidebar";
 // import { Toaster } from "react-hot-toast";
 import Providers from "@/components/providers/TanstackProvider";
 
+export const metadata = {
+  title: "Kauser & Associates Ltd | Official site.",
+  description: "A Hub of Corporate Law Matters in Bangladesh",
+};
+
 export default function DashboardLayout({ children }) {
   return (
     <Providers>

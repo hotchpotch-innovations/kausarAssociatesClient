@@ -6,7 +6,13 @@ const navbarSlice = createSlice({
   name: "navbar",
   initialState,
   reducers: {
-    hamburgerToggle: (state) => (state = !state),
+    hamburgerToggle: (state, action) => {
+      if (action.payload === false) {
+        return true; // tracking outside click
+      } else {
+        return !state;
+      }
+    },
   },
 });
 

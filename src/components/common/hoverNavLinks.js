@@ -7,9 +7,18 @@ export const navLinks = [
   },
   {
     _id: "nav001",
-    menu: "About Us",
+    menu: "About",
     link: "/aboutUs",
-    submenu: [],
+    submenu: [
+      {
+        menu: "About Us",
+        link: "/about/aboutUs/",
+      },
+      {
+        menu: "Team",
+        link: "/about/team/",
+      },
+    ],
   },
   {
     _id: "nav002",

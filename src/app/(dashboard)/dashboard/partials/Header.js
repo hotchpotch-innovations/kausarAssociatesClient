@@ -9,7 +9,7 @@ function Header() {
   const [searchModalOpen, setSearchModalOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 bg-primary text-white dark:bg-[#182235] border-b border-slate-200 dark:border-slate-700">
+    <header className="sticky z-10 top-0 bg-primary text-white dark:bg-[#182235] border-b border-slate-200 dark:border-slate-700">
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="w-full flex flex-col md:flex-row items-center justify-between h-auto ">
           <div className="hidden md:block lg:block">

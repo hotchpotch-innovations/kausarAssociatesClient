@@ -16,7 +16,7 @@ import FormRoutes from "./components/managements/Forms";
 const DashboardSidebar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   return (
-    <div>
+    <div className="custom-scrollbar">
       <div
         className={`static flex flex-col z-40 left-0 top-0 transition-all duration-500 ease-in-out ${
           sidebarOpen ? "h-auto" : "h-16"
@@ -24,7 +24,7 @@ const DashboardSidebar = () => {
           sidebarOpen ? "w-screen lg:w-64" : "w-screen lg:w-20"
         } shrink-0 bg-slate-800 p-4 transition-all duration-500 ease-in-out ${
           sidebarOpen ? "translate-x-0" : "translate-x-0"
-        }`}
+        } custom-scrollbar`}
       >
         <div className="flex justify-between items-start mb-10 pr-3 sm:px-2">
           {/* Close Button  */}
@@ -34,11 +34,11 @@ const DashboardSidebar = () => {
           />
         </div>
 
-        <div className="">
+        <div className="custom-scrollbar">
           {/* Sidebar Header */}
           <SidebarHeader sidebarOpen={sidebarOpen} />
           <div
-            className={`space-y-3 text-white max-h-[70vh] overflow-y-auto overflow-x-hidden ${
+            className={`custom-scrollbar space-y-3 text-white max-h-[70vh] overflow-y-auto overflow-x-hidden ${
               sidebarOpen
                 ? "block lg:block duration-500"
                 : "hidden lg:block duration-500"

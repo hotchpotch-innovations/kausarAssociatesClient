@@ -1,6 +1,7 @@
 import React from "react";
 import IncorporationCategoryTable from "./components/IncorporationCategoryTable";
 import CreateIncorporationCategoryForm from "./components/CreateIncorporationCategory";
+import TextEditorForm from "./components/TextEditorForm";
 
 const page = () => {
   const api = "http://localhost:3000/api/v1/incorporation-categories";
@@ -14,6 +15,9 @@ const page = () => {
           <div>
             <div className="mb-2 flex justify-end">
               <CreateIncorporationCategoryForm />
+            </div>
+            <div>
+              <TextEditorForm />
             </div>
             <IncorporationCategoryTable api={api} />
           </div>

@@ -15,7 +15,7 @@ const IncorporationSubmenuSection = () => {
   }
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <HoverSubmenuButton submenu={incorporationSubmenu} />
     </div>
   );

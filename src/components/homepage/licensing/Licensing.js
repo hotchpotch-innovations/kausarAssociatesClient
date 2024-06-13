@@ -9,19 +9,20 @@ import {
 } from "@/components/common/storageVariables";
 import AbsoluteText from "@/components/common/absoluteText/AbsoluteText";
 
-const Licensing = ({isBg}) => {
-
+const Licensing = ({ isBg }) => {
   return (
     <section>
-      <div
-        className={`h-full ${isBg ? 'bg-cover bg-center' : "bg-none"}`}
-      >
-        <div className={`w-full ${isBg ? 'bg-primary md:bg-gradient-to-l lg:bg-gradient-to-l' : 'bg-none'} from-blue-600/70 via-blue-600/70 to-blue-600/70 bg-cover`}>
-          <div className={`${isBg ? 'bg-primary md:bg-transparent lg:bg-transparent' : "bg-none"}`}>
+      <div className={`h-full ${isBg ? "bg-cover bg-center" : "bg-none"}`}>
+        <div
+          className={`w-full ${
+            isBg ? "bg-white" : "bg-none"
+          } from-blue-600/70 via-blue-600/70 to-blue-600/70 bg-cover`}
+        >
+          <div className={`${isBg ? "bg-white" : "bg-none"}`}>
             <div className="content-container">
               <AbsoluteText
                 text={"LICENSING"}
-                isTextWhite={isBg ? true : false}
+                isTextWhite={false}
               ></AbsoluteText>
               <div className="content-container text-white">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-0 lg:gap-0">
@@ -32,7 +33,7 @@ const Licensing = ({isBg}) => {
                         key={service?._id}
                         title={service?.title}
                         body={service?.body}
-                        isTextWhite={isBg ? true : false}
+                        isTextWhite={false}
                         largeRight={
                           largeDevicesRightBorderElements.includes(index)
                             ? true

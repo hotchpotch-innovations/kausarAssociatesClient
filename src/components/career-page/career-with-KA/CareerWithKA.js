@@ -1,8 +1,13 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
-import image from '../images/37385.jpg';
+import React, { useState } from "react";
+import image from "../images/37385.jpg";
+import { motion } from "framer-motion";
+import { FiArrowRight } from "react-icons/fi";
 
 const CareerWithKA = () => {
+  const [inView, setInView] = useState(false);
   return (
     <div className="flex flex-col-reverse md:flex-row lg:flex-row justify-between items-center">
       <div className="w-full md:w-1/2 lg:w-1/2 p-4 m-0 md:m-4 lg:m-4">
@@ -36,8 +41,33 @@ const CareerWithKA = () => {
         </div>
       </div>
       <div className="w-full md:w-1/2 lg:w-1/2 mb-6 md:mt-0 lg:mt-0 p-0 md:p-8 lg:p-10 border-2 m-0 md:m-4 lg:m-4">
-        <div>
+        <div
+          onMouseEnter={() => setInView(true)}
+          onMouseLeave={() => setInView(false)}
+          className="relative flex justify-center items-center overflow-hidden"
+        >
           <Image src={image} alt="" className="w-full h-full"></Image>
+          <motion.div
+            initial={{
+              left: "-100%",
+            }}
+            animate={
+              inView
+                ? {
+                    left: "0%",
+                    transition: { ease: [0.33, 0.55, 0.45, 1] },
+                  }
+                : "-100%"
+            }
+            className="absolute w-full h-full bg-black/30 z-10 flex justify-center items-center"
+          >
+            <button className="py-2 px-2 md:px-4 text-white bg-black rounded-md transition-colors ease-in-out duration-300 font-medium flex items-center gap-2 group text-sm lg:text-base group">
+              Join Now
+              <span className="relative right-0 group-hover:-right-1 md:group-hover:-right-2 transition-all duration-300 ease-in-out">
+                <FiArrowRight size={18} color="#fff" />
+              </span>
+            </button>
+          </motion.div>
         </div>
       </div>
     </div>

@@ -1,10 +1,10 @@
-"use client"
+"use client";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { useDispatch } from "react-redux";
 import { hamburgerToggle } from "../../../../provider/redux/features/navbarSlice";
 
-const HoverSubmenuButton = ({ submenu }) => {
+const HoverSubmenuButton = ({ submenu, textStyle }) => {
   const router = useRouter();
   const dispatch = useDispatch();
 
@@ -14,15 +14,19 @@ const HoverSubmenuButton = ({ submenu }) => {
   };
 
   return (
-    <ul>
-      {submenu.map((item) => {
+    <ul className="overflow-x-hidden">
+      {submenu.map((item, idx) => {
         return (
           <li
-            key={item?._id}
-            className="w-full cursor-pointer my-4 font-semibold hover:text-blue-800 duration-500 border-b border-blue-300 hover:border-blue-600"
+            key={item?._id ? item?._id : idx}
+            className={`cursor-pointer mt-4 font-semibold hover:text-blue-800 duration-500 border-b border-blue-300 hover:border-blue-600 ml-4 ${textStyle}`}
           >
             <p
-              onClick={() => submenuLinkHandler(item?.link + item?._id)}
+              onClick={() =>
+                submenuLinkHandler(
+                  item?._id ? item?.link + item?._id : item?.link
+                )
+              }
               className="w-full cursor-pointer"
             >
               {item?.menu}
