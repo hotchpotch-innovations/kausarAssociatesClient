@@ -10,6 +10,7 @@
 
 body {
   overflow-x: hidden;
+  background-color: white;
 }
 
 :root {
@@ -311,7 +312,7 @@ body {
     transform: translateX(0);
   }
   100% {
-      transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
 
@@ -325,6 +326,6 @@ body {
     transform: translateX(-50%);
   }
   100% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 }
