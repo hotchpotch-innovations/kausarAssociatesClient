@@ -11,7 +11,7 @@ const Client = () => {
         alt=""
         width={400}
         height={200}
-        className="w-56 h-28"
+        className="w-56 min-h-[60px] xl:h-28 aspect-square"
       ></Image>
     </div>
   );

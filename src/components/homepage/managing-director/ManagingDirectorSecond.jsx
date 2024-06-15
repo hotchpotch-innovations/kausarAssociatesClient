@@ -84,16 +84,14 @@ const ManagingDirectorSecond = () => {
               </p>
 
               {/* btn */}
-                  <div className="mt-3 lg:mt-6 xl:mt-8 2xl:mt-10">
-                    <button className="py-1 md:py-2 px-2 md:px-4 text-white bg-black rounded-md transition-colors ease-in-out duration-300 font-medium flex items-center gap-2 group text-sm lg:text-base group">
-                      Enroll Now
-                      <span
-                        className="relative right-0 group-hover:-right-2 transition-all duration-300 ease-in-out"
-                      >
-                        <FiArrowRight size={18} color="#fff" />
-                      </span>
-                    </button>
-                  </div>
+              <div className="mt-3 lg:mt-6 xl:mt-8 2xl:mt-10">
+                <button className="py-2 px-2 md:px-4 text-white bg-black rounded-md transition-colors ease-in-out duration-300 font-medium flex items-center gap-2 group text-sm lg:text-base group">
+                  Enroll Now
+                  <span className="relative right-0 group-hover:-right-1 md:group-hover:-right-2 transition-all duration-300 ease-in-out">
+                    <FiArrowRight size={18} color="#fff" />
+                  </span>
+                </button>
+              </div>
             </motion.div>
             <motion.div
               variants={topAnimVariant}
