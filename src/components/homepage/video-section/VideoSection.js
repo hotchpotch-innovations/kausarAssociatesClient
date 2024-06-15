@@ -20,7 +20,7 @@ const VideoSection = () => {
         autoPlay
         width={1920}
         height={564}
-        className="w-full h-[500px] object-cover aspect-square"
+        className="w-full max-h-[800px] object-cover aspect-video"
       />
     </section>
   );

@@ -27,9 +27,9 @@ const OurClientSection = () => {
           <Client></Client>
           <Client></Client>
           <Client></Client>
-          <Client></Client>
-          <Client></Client>
-          <Client></Client>
+            <Client></Client>
+            <Client></Client>
+            <Client></Client>
           {/* ////////////// */}
           <Client></Client>
           <Client></Client>
