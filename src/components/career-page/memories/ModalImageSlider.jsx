@@ -35,7 +35,7 @@ const ModalImageSlider = ({ image, setModal, setSlideImage }) => {
   };
   return (
     <div>
-      <div className=" gap-3 fixed h-[100vh] w-[100vw] top-0 z-[10] pointer-events-auto  flex justify-center  items-center  box-border outline-0 bg-black/60">
+      <div className=" gap-3 fixed h-[100vh] w-[100vw] top-12 md:top-20 lg:top-24 z-[10] pointer-events-auto  flex justify-center  items-center  box-border outline-0 bg-black/60">
         <div className="h-[70vh] md:h-[100vh] lg:h-[100vh] w-[100vw] bg-black/60 relative">
           <div className="absolute top-[5%] w-full flex justify-center items-center">
             <div className="h-[70vh] md:h-[80vh] lg:h-[90vh] w-[90vw] flex flex-col justify-start items-center relative">
