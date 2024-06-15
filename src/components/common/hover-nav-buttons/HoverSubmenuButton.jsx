@@ -15,7 +15,7 @@ const HoverSubmenuButton = ({ submenu, textStyle }) => {
 
   return (
     <ul className="overflow-x-hidden">
-      {submenu.map((item, idx) => {
+      {submenu?.map((item, idx) => {
         return (
           <li
             key={item?._id ? item?._id : idx}

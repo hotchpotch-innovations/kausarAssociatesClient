@@ -8,7 +8,7 @@ const OurClientSection = () => {
   // const { data, isError, isLoading } = useQuery({
   //   queryKey: ["repoData"],
   //   queryFn: async () => {
-  //     const response = await axios.get("http://localhost:3000/api/v1/clients");
+  //     const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_API}/clients`);
   //     return response?.data;
   //   },
   // });

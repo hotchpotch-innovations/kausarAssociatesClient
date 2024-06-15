@@ -1,12 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { images } from "@/components/career-page/career-with-KA/imagesData";
 import FooterCarouselLoader from "../loader/FooterCarouselLoader";
 import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import { images } from "../../../../public/fake-data/memories/imagesData";
 
 export default function FooterCarousel() {
   const [swiperLoaded, setSwiperLoaded] = useState(false);

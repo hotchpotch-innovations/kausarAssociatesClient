@@ -1,12 +1,12 @@
 import AboutUsBanner from "@/components/about-us/AboutUsBanner";
-import FAQ from "@/components/about-us/FAQ";
-import OurConsultancy from "@/components/about-us/OurConsultancy";
 import PresidentMessage from "@/components/about-us/PresidentMessage";
 import SolveCases from "@/components/about-us/SolveCases";
 import TitleSection from "@/components/about-us/TitleSection";
-import Values from "@/components/about-us/Values";
 import VisionMission from "@/components/about-us/VisionMission";
 import WhoWeAre from "@/components/about-us/WhoWeAre";
+import OurConsultancy from "@/components/about-us/consultancy/OurConsultancy";
+import Values from "@/components/about-us/core-values/Values";
+import FAQ from "@/components/about-us/faq/FAQ";
 import React from "react";
 
 const page = () => {

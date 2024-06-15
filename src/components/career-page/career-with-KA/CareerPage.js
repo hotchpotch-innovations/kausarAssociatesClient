@@ -1,10 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import ModalImageSlider from "./ModalImageSlider";
 import CareerWithKA from "./CareerWithKA";
-import WorkEnvironment from "./WorkEnvironment";
-import Memories from "./Memories";
-import image from "../images/37385.jpg";
+import ModalImageSlider from "../memories/ModalImageSlider";
+import Memories from "../memories/Memories";
 
 const CareerPage = () => {
   const defaultSlideImage = {
@@ -20,9 +18,6 @@ const CareerPage = () => {
           <div className="content-container">
             <CareerWithKA></CareerWithKA>
           </div>
-          {/* <div className="content-container">
-              <WorkEnvironment></WorkEnvironment>
-            </div> */}
           <div className="content-container">
             <Memories
               setSlideImage={setSlideImage}
