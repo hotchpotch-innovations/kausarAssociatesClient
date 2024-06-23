@@ -52,11 +52,11 @@ const TaxationSection = () => {
                   </h2>
                 </div>
                 {/* heading */}
-                <h1 className="text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-none xl:leading-[1.05] 2xl:leading-tight mt-2">
+                <h1 className="text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-none xl:leading-[1.05] 2xl:leading-tight mt-2 text-black">
                   Inspiring & Helping <br /> Live Better Lifestyle
                 </h1>
 
-                <p className="text-justify mt-4 md:mt-4 lg:mt-5 2xl:mt-6">
+                <p className="text-justify mt-4 md:mt-4 lg:mt-5 2xl:mt-6 text-black">
                   This is one of many areas of professional service where our
                   company is well ahead of the competition. Tax consultancy team
                   of This is one of many areas of professional service where our

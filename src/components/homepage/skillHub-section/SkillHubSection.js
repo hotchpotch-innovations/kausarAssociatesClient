@@ -39,11 +39,11 @@ const SkillHubSection = () => {
                   </h2>
                 </div>
                 {/* heading */}
-                <h1 className="text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-none xl:leading-[1.05] 2xl:leading-tight mt-2">
+                <h1 className="text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-none xl:leading-[1.05] 2xl:leading-tight mt-2 text-black">
                   Inspiring & Helping <br /> Live Better Lifestyle
                 </h1>
 
-                <p className="text-justify mt-4 md:mt-4 lg:mt-5 2xl:mt-6">
+                <p className="text-justify mt-4 md:mt-4 lg:mt-5 2xl:mt-6 text-black">
                   This is one of many areas of professional service where our
                   company is well ahead of the competition. Tax consultancy team
                   of This is one of many areas of professional service where our
@@ -72,10 +72,10 @@ const SkillHubSection = () => {
                     </div>
                     {/* phone number */}
                     <div className="flex flex-col">
-                      <p className="font-bold uppercase text-sm tracking-wide lg:text-base">
+                      <p className="font-bold uppercase text-xs sm:text-sm tracking-wide lg:text-base">
                         Get Help
                       </p>
-                      <p className="font-bold uppercase text-sm lg:text-base">
+                      <p className="font-bold uppercase text-xs sm:text-sm lg:text-base">
                         +8801735 887 882
                       </p>
                     </div>

@@ -167,11 +167,31 @@ body {
   .mySwiper [class^="swiper-button-"]::after {
     font-size: 30px;
   }
+  
+  .slide-client-carousel {
+    width: 300%;
+    animation: client-logo 30s linear infinite;
+  }
+
+  .slide-client-carousel-2 {
+    width: 300%;
+    animation: client-logo-2 30s linear infinite;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .mySwiper [class^="swiper-button-"]::after {
     font-size: 20px;
+  }
+ 
+  .slide-client-carousel {
+    width: 600%;
+    animation: client-logo 30s linear infinite;
+  }
+
+  .slide-client-carousel-2 {
+    width: 600%;
+    animation: client-logo-2 30s linear infinite;
   }
 }
 
@@ -187,6 +207,7 @@ body {
     animation: animate 10s linear infinite alternate forwards;
     transition: all 1s ease-in-out;
   }
+
 }
 @media screen and (max-width: 1024px) {
   /* TAX SECTION IMAGE */
@@ -302,11 +323,6 @@ body {
   }
 }
 
-.slide-client-carousel {
-  width: 300%;
-  animation: client-logo 30s linear infinite;
-}
-
 @keyframes client-logo {
   0% {
     transform: translateX(0);
@@ -314,11 +330,6 @@ body {
   100% {
     transform: translateX(-50%);
   }
-}
-
-.slide-client-carousel-2 {
-  width: 300%;
-  animation: client-logo-2 30s linear infinite;
 }
 
 @keyframes client-logo-2 {
