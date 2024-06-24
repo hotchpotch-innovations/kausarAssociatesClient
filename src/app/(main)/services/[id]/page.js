@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Banner from "@/components/service-page/Banner";
 import DetailsTitleSection from "@/components/service-page/DetailsTitleSection";
@@ -9,18 +9,16 @@ import { fetchSubCatData } from "../../../../../provider/redux/features/serviceC
 
 const Page = () => {
   const dispatch = useDispatch();
-  const data = useSelector(state => state.serviceCatData);
+  const data = useSelector((state) => state.serviceCatData);
 
   useEffect(() => {
-    dispatch(fetchSubCatData("?_id"))
-  }, [dispatch])
+    dispatch(fetchSubCatData("?_id"));
+  }, [dispatch]);
 
   // if data is loading. We can set also error state later.
-  if(data?.loading) {
-    return <p>Loading</p>
+  if (data?.loading) {
+    return <p>Loading</p>;
   }
-
-  console.log(data.data[0], "drom page")
 
   return (
     <section>
