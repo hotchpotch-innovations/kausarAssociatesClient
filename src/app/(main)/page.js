@@ -22,13 +22,13 @@ export default function Home() {
       <Hero></Hero>
       <ManagingDirectorSecond />
       {/* <ManagingDirector></ManagingDirector> */}
-      <Services isBg={true}></Services>
+      <Services isBg={false}></Services>
       {/* <Incorporation isBg={false}></Incorporation> */}
-      <Licensing isBg={true}></Licensing>
+      <Licensing isBg={false}></Licensing>
       <Team></Team>
       <HubSection></HubSection>
       <TaxationSection></TaxationSection>
-      <GallerySection></GallerySection>
+      {/* <GallerySection></GallerySection> */}
       <BanglaArticlesSection></BanglaArticlesSection>
       <VideoSection></VideoSection>
       <SkillHubSection></SkillHubSection>

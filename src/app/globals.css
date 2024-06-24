@@ -167,14 +167,14 @@ body {
   .mySwiper [class^="swiper-button-"]::after {
     font-size: 30px;
   }
-  
+
   .slide-client-carousel {
-    width: 300%;
+    width: 500%;
     animation: client-logo 30s linear infinite;
   }
 
   .slide-client-carousel-2 {
-    width: 300%;
+    width: 500%;
     animation: client-logo-2 30s linear infinite;
   }
 }
@@ -183,7 +183,7 @@ body {
   .mySwiper [class^="swiper-button-"]::after {
     font-size: 20px;
   }
- 
+
   .slide-client-carousel {
     width: 600%;
     animation: client-logo 30s linear infinite;
@@ -193,11 +193,10 @@ body {
     width: 600%;
     animation: client-logo-2 30s linear infinite;
   }
-  
+
   .privacy-container > p {
     font-size: 12px;
   }
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -212,7 +211,6 @@ body {
     animation: animate 10s linear infinite alternate forwards;
     transition: all 1s ease-in-out;
   }
-
 }
 
 @media screen and (max-width: 1024px) {
@@ -229,7 +227,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1280px) { 
+@media screen and (min-width: 1280px) {
   .privacy-container > p {
     font-size: 20px;
   }
@@ -258,8 +256,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1280px) { 
-
+@media screen and (max-width: 1280px) {
   .term-and-condition-container > p {
     font-size: 12px;
     font-weight: 400;
@@ -400,4 +397,8 @@ body {
   100% {
     transform: translateX(0);
   }
+}
+
+.service-cat-card:hover img {
+  transform: rotateY(180deg);
 }

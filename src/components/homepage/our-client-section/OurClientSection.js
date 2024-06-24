@@ -1,6 +1,7 @@
 import AbsoluteText from "@/components/common/absoluteText/AbsoluteText";
 import React from "react";
 import Client from "./Client";
+import { SectionTitle } from "@/components/common/section-title/SectionTitle";
 // import { useQuery } from "@tanstack/react-query";
 // import axios from "axios";
 
@@ -14,22 +15,21 @@ const OurClientSection = () => {
   // });
   // console.log(data);
   return (
-    <section className=" overflow-hidden">
-      <div className="content-container">
-        <AbsoluteText
-          text={"OUR CLIENT"}
-          isTextCenter={true}
-          isTextWhite={false}
-        ></AbsoluteText>
+    <section className=" overflow-hidden content-container">
+      <div className="pb-3 md:pb-5 xl:pb-8">
+        <SectionTitle
+          subtitleLabel="Law firm and company"
+          titleLabel="Our Client"
+        />
       </div>
-      <div className="flex flex-col gap-4 md:gap-6 xl:gap-10">
+      <div className="flex flex-col gap-4 md:gap-6 2xl:gap-10 ">
         <div className="flex slide-client-carousel">
           <Client></Client>
           <Client></Client>
           <Client></Client>
-            <Client></Client>
-            <Client></Client>
-            <Client></Client>
+          <Client></Client>
+          <Client></Client>
+          <Client></Client>
           {/* ////////////// */}
           <Client></Client>
           <Client></Client>
