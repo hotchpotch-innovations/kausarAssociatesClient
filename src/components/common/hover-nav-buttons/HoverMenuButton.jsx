@@ -19,7 +19,7 @@ const HoverMenuButton = ({ nav, idx }) => {
 
   const menuLinkHandler = (link) => {
     // those who have sub cat we don't want to have click effect on them
-    if (idx === 1 || idx === 2 || idx === 4 || idx === 6) return;
+    if (idx === 1 || idx === 2 || idx === 3 || idx === 5) return;
 
     dispatch(hamburgerToggle());
     router.push(link);
