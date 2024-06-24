@@ -6,7 +6,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 const SkillHubSection = () => {
   return (
-    <section className="border-b border-blue-600">
+    <section className=" max-w-screen-2xl mx-auto">
       <div className="content-container">
         <div className="flex flex-col md:flex-row justify-between items-center gap-5">
           <div className="w-full  flex  items-center">

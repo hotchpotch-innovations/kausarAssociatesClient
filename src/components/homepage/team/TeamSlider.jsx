@@ -7,17 +7,12 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper/modules";
+import { Navigation, Scrollbar, A11y, Autoplay } from "swiper/modules";
 import { teamSlideData } from "./teamSlideFakeData";
 import NavigateButton from "./NavigateButton";
 import Card from "@/components/team/Card";
 import { teamCardData } from "@/data";
+import TeamCarouselLoader from "@/components/common/loader/TeamCarouselLoader";
 
 const Slider = () => {
   const [slidesPerView, setSlidesPerView] = useState(
@@ -27,6 +22,14 @@ const Slider = () => {
       ? 2
       : 3
   );
+  const [swiperLoaded, setSwiperLoaded] = useState(false);
+
+  useEffect(() => {
+    import("swiper").then((SwiperModule) => {
+      SwiperModule.default.use([Autoplay, Navigation]);
+      setSwiperLoaded(true);
+    });
+  }, []);
 
   useEffect(() => {
     function resizeCheck() {
@@ -47,6 +50,10 @@ const Slider = () => {
       window.removeEventListener("resize", resizeCheck);
     };
   }, []);
+
+  if (!swiperLoaded) {
+    return <TeamCarouselLoader />;
+  }
 
   return (
     <div className="">
