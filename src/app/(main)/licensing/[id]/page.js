@@ -7,7 +7,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchSubCatData } from "../../../../../provider/redux/features/serviceCatDataSlice";
 
-const page = () => {
+const LicensingPage = () => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.serviceCatData);
 
@@ -15,7 +15,8 @@ const page = () => {
     dispatch(fetchSubCatData("?_id"));
   }, [dispatch]);
 
-  // if data is loading. We can set also error state later.
+  // if data is loading.
+  // We can set also error state later.
   if (data?.loading) {
     return <p>Loading</p>;
   }
@@ -28,4 +29,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default LicensingPage;
