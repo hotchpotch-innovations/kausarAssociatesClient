@@ -13,7 +13,7 @@ export const SectionTitle = ({
         </div>
 
         <h2
-          className={`text-xs md:text-sm xl:text-base 2xl:text-lg font-bold ml-4 2xl:ml-6 ${subtitleColor}`}
+          className={`text-xs lg:text-sm 2xl:text-base font-bold ml-4 2xl:ml-6 ${subtitleColor}`}
         >
           {subtitleLabel}
         </h2>
