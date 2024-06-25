@@ -11,23 +11,25 @@ import {
 } from "@/components/common/storageVariables";
 import AbsoluteText from "@/components/common/absoluteText/AbsoluteText";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchSubCatData } from "../../../../provider/redux/features/serviceCatDataSlice";
 import ServicesCardLoader from "@/components/common/loader/ServicesCardLoader";
 import { SectionTitle } from "@/components/common/section-title/SectionTitle";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import ServiceCatCard from "@/components/common/ServiceCatCard/ServiceCatCard";
+import { fetchLicenseCatData } from "../../../../provider/redux/features/licenseCatDataSlice";
 
 const Licensing = ({ isBg }) => {
   const dispatch = useDispatch();
-  const data = useSelector((state) => state.serviceCatData);
+  const data = useSelector((state) => state.licenseCatData);
+
+  console.log(data, "license ddata");
 
   // Duplicate the single object 6 times if there is only 1 object in the array
   const serviceCards =
     data?.data?.length === 1 ? Array(6).fill(data?.data[0]) : data?.data;
 
   useEffect(() => {
-    dispatch(fetchSubCatData("?_id"));
+    dispatch(fetchLicenseCatData("?_id"));
   }, [dispatch]);
 
   // if data is loading. We can set also error state later.
@@ -76,9 +78,12 @@ const Licensing = ({ isBg }) => {
           </div>
           {/* section content */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-16 lg:gap-y-20 xl:gap-y-24 2xl:px-20 max-w-screen-2xl mx-auto">
-            {serviceCards.map((card, idx) => (
-              <ServiceCatCard key={card._id} card={card} idx={idx} />
-            ))}
+            {serviceCards.map(
+              (card, idx) =>
+                card.is_published && (
+                  <ServiceCatCard key={card._id} card={card} idx={idx} />
+                )
+            )}
           </div>
         </div>
       </div>
