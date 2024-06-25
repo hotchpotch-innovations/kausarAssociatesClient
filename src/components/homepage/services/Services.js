@@ -79,11 +79,10 @@ const Services = ({ isBg }) => {
           </div>
           {/* section content */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-16 lg:gap-y-20 xl:gap-y-24 2xl:px-20 max-w-screen-2xl mx-auto">
-            {serviceCards.map(
-              (card, idx) =>
-                card.is_published && (
-                  <ServiceCatCard key={card._id} card={card} idx={idx} />
-                )
+            {serviceCards.map((card, idx) =>
+              card.is_published ? (
+                <ServiceCatCard key={card._id} card={card} idx={idx} />
+              ) : null
             )}
           </div>
         </div>
