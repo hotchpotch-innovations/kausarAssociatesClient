@@ -22,8 +22,6 @@ const Licensing = ({ isBg }) => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.licenseCatData);
 
-  console.log(data, "license ddata");
-
   // Duplicate the single object 6 times if there is only 1 object in the array
   const serviceCards =
     data?.data?.length === 1 ? Array(6).fill(data?.data[0]) : data?.data;
