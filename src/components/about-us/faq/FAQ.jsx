@@ -15,7 +15,7 @@ const FAQ = () => {
             everything work
           </h1>
           <div className="h-[1px] w-full bg-black"></div>
-          <div className="my-4 text-xs md:text-sm lg:text-sm">
+          {/* <div className="my-4 text-xs md:text-sm lg:text-sm">
             <p className="mb-2">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout.
@@ -26,7 +26,7 @@ const FAQ = () => {
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book.
             </p>
-          </div>
+          </div> */}
         </div>
 
         <div className="mt-12">

@@ -3,6 +3,7 @@ import AbsoluteText from "../../common/absoluteText/AbsoluteText";
 import Consultancy from "./Consultancy";
 import Image from "next/image";
 import taxImage from "@/assets/images/tax.jpeg";
+import { SectionTitle } from "@/components/common/section-title/SectionTitle";
 
 const OurConsultancy = () => {
   const content =
@@ -10,13 +11,17 @@ const OurConsultancy = () => {
   return (
     <section className="content-container">
       <div className="mb-16 md:mb-28 lg:mb-32">
-        <AbsoluteText
+        {/* <AbsoluteText
           isTextCenter={true}
           isTextWhite={false}
           text={"OUR CONSULTANCY"}
           isText2={true}
           text2={"PROCESS"}
-        ></AbsoluteText>
+        ></AbsoluteText> */}
+        <SectionTitle
+          subtitleLabel="Law firm and company"
+          titleLabel="Our Consultancy Process"
+        />
       </div>
       <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
         <div className=" mb-6 md:mb-0 lg:mb-0">
