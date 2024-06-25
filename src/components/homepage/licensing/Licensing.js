@@ -17,6 +17,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import ServiceCatCard from "@/components/common/ServiceCatCard/ServiceCatCard";
 import { fetchLicenseCatData } from "../../../../provider/redux/features/licenseCatDataSlice";
+import LicenseCatCard from "@/components/common/ServiceCatCard/LicenseCatCard";
 
 const Licensing = ({ isBg }) => {
   const dispatch = useDispatch();
@@ -79,7 +80,7 @@ const Licensing = ({ isBg }) => {
             {serviceCards.map(
               (card, idx) =>
                 card.is_published && (
-                  <ServiceCatCard key={card._id} card={card} idx={idx} />
+                  <LicenseCatCard key={card._id} card={card} idx={idx} />
                 )
             )}
           </div>
