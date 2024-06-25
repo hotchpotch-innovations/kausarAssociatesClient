@@ -21,7 +21,7 @@ const HowWeHelp = ({ data }) => {
                 </div>
                 <div className="flex-none md:flex lg:flex justify-between">
                   <div className="w-full md:w-1/2 lg:w-1/2  mb-6 md:mb-0 lg:mb-0">
-                    <ul className="list-disc mx-8 text-base md:text-lg lg:text-xl">
+                    <ul className="list-disc mx-8 text-sm lg:text-base 2xl:text-lg">
                       {list.extraList.map((exList, idx) => (
                         <li key={idx} className="mb-2 text-gray-600">
                           {exList}
