@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const ServiceCatCard = ({ card, idx }) => {
+  console.log(card, "card data");
   return (
     <div
       className="text-black w-[290px] h-[180px] md:w-[320px] md:h-[240px] lg:w-[270px] lg:h-[190px] xl:w-[320px] xl:h-[250px] 2xl:w-[380px] 2xl:h-[290px] rounded-t-full relative service-cat-card transition-all ease-in-out duration-500 mx-auto"
@@ -31,7 +32,7 @@ const ServiceCatCard = ({ card, idx }) => {
         </Link>
         {/* TODO: When making data dynamic -> text desc will be max 100 character long */}
         <p className="text-xs md:text-sm lg:text-xs xl:text-sm 2xl:text-base text-slate-600 text-center">
-          {card.description[0].slice(0, 111)}...
+          {card?.description[0]?.slice(0, 111)}...
         </p>
 
         <div className="absolute -bottom-3 lg:-bottom-4 2xl:-bottom-5">

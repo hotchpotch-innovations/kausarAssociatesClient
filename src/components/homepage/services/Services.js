@@ -22,6 +22,8 @@ const Services = ({ isBg }) => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.serviceCatData);
 
+  // console.log(data, "data");
+
   // Duplicate the single object 6 times if there is only 1 object in the array
   const serviceCards =
     data?.data?.length === 1 ? Array(6).fill(data?.data[0]) : data?.data;
@@ -77,9 +79,12 @@ const Services = ({ isBg }) => {
           </div>
           {/* section content */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-16 lg:gap-y-20 xl:gap-y-24 2xl:px-20 max-w-screen-2xl mx-auto">
-            {serviceCards.map((card, idx) => (
-              <ServiceCatCard key={card._id} card={card} idx={idx} />
-            ))}
+            {serviceCards.map(
+              (card, idx) =>
+                card.is_published && (
+                  <ServiceCatCard key={card._id} card={card} idx={idx} />
+                )
+            )}
           </div>
         </div>
       </div>
