@@ -50,8 +50,8 @@ const HoverMenuButton = ({ nav, idx }) => {
           <div
             className={`${
               submenu.length > 0 &&
-              " w-full lg:w-72 min-h-fit max-h-96 overflow-auto bg-blue-100 p-2 lg:p-3 rounded-sm"
-            } hidden hover:block transition-all duration-500 group-hover:block lg:group-hover:border-t-2 border-blue-600 mt-0 lg:mt-4`}
+              " w-full lg:w-72 min-h-fit max-h-96 overflow-auto bg-white p-2 lg:p-3 rounded-sm"
+            } hidden hover:block transition-all duration-500 group-hover:block lg:group-hover:border-t-2 border-t-blue-600 mt-0 lg:mt-4 shadow-md border-l border-r border-b border-r-gray-100 border-b-gray-100`}
           >
             {nav.menu === "About" && <HoverSubmenuButton submenu={submenu} />}
 
