@@ -61,7 +61,7 @@
       "identifier": ""
     },
     "service_image": "",
-    "is_published": "false"
+    "is_published": true
   },
   {
     "_id": "6789438202",
@@ -113,7 +113,7 @@
       "identifier": ""
     },
     "service_image": "",
-    "is_published": "false"
+    "is_published": true
   },
   {
     "_id": "6789438203",
@@ -158,7 +158,7 @@
       "identifier": ""
     },
     "service_image": "",
-    "is_published": "false"
+    "is_published": true
   },
   {
     "_id": "6789438204",
@@ -204,7 +204,7 @@
       "identifier": ""
     },
     "service_image": "",
-    "is_published": "false"
+    "is_published": true
   },
   {
     "_id": "6789438205",
@@ -250,7 +250,7 @@
       "identifier": ""
     },
     "service_image": "",
-    "is_published": "false"
+    "is_published": true
   },
   {
     "_id": "6789438206",
@@ -296,7 +296,7 @@
       "identifier": ""
     },
     "service_image": "",
-    "is_published": "false"
+    "is_published": true
   },
   {
     "_id": "6789438207",
@@ -326,7 +326,7 @@
       "identifier": ""
     },
     "service_image": "",
-    "is_published": "false"
+    "is_published": false
   },
   {
     "_id": "6789438208",
@@ -366,7 +366,7 @@
       "identifier": ""
     },
     "service_image": "",
-    "is_published": "false"
+    "is_published": false
   },
   {
     "_id": "6789438209",
@@ -394,7 +394,7 @@
       "identifier": ""
     },
     "service_image": "",
-    "is_published": "false"
+    "is_published": false
   },
   {
     "_id": "6789438210",
@@ -424,7 +424,7 @@
       "identifier": ""
     },
     "service_image": "",
-    "is_published": "false"
+    "is_published": false
   },
   {
     "_id": "6789438211",
@@ -479,7 +479,7 @@
       "identifier": ""
     },
     "service_image": "",
-    "is_published": "false"
+    "is_published": false
   },
   {
     "_id": "6789438212",
@@ -532,7 +532,7 @@
       "identifier": ""
     },
     "service_image": "",
-    "is_published": "false"
+    "is_published": false
   },
   {
     "_id": "6789438213",
@@ -580,7 +580,7 @@
       "identifier": ""
     },
     "service_image": "",
-    "is_published": "false"
+    "is_published": false
   },
   {
     "_id": "6789438214",
@@ -626,6 +626,6 @@
       "identifier": ""
     },
     "service_image": "",
-    "is_published": "false"
+    "is_published": false
   }
 ]

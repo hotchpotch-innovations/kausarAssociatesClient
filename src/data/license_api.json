@@ -26,7 +26,7 @@
       "identifier": ""
     },
     "service_image": "",
-    "is_published": "false"
+    "is_published": true
   },
   {
     "_id": "6789438216",
@@ -73,7 +73,7 @@
       "identifier": ""
     },
     "service_image": "",
-    "is_published": "false"
+    "is_published": true
   },
   {
     "_id": "6789438218",
@@ -119,7 +119,7 @@
       "identifier": ""
     },
     "service_image": "",
-    "is_published": "false"
+    "is_published": true
   },
   {
     "_id": "6789438217",
@@ -147,6 +147,6 @@
       "identifier": ""
     },
     "service_image": "",
-    "is_published": "false"
+    "is_published": true
   }
 ]
