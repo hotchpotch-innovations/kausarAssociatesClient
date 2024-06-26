@@ -1,4 +1,4 @@
-import { serviceCardBgColor } from "@/data/service-api";
+import { serviceCardBgColor, serviceCardTitleColor } from "@/data/service-api";
 import Image from "next/image";
 import Link from "next/link";
 

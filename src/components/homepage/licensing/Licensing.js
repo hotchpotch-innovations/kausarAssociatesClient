@@ -18,8 +18,17 @@ import Image from "next/image";
 import ServiceCatCard from "@/components/common/ServiceCatCard/ServiceCatCard";
 import { fetchLicenseCatData } from "../../../../provider/redux/features/licenseCatDataSlice";
 import LicenseCatCard from "@/components/common/ServiceCatCard/LicenseCatCard";
+import { containerVariants, itemVariants } from "../services/anim";
+import useInView from "@/hooks/useInView";
 
 const Licensing = ({ isBg }) => {
+  const [ref, inView] = useInView({
+    triggerOnce: false, // to grigger the animation only once
+    observerOpt: {
+      threshold: 0.1, // when 0.1 -> 10% of the component is in view
+    },
+  });
+
   const dispatch = useDispatch();
   const data = useSelector((state) => state.licenseCatData);
 
@@ -76,14 +85,21 @@ const Licensing = ({ isBg }) => {
             </motion.div>
           </div>
           {/* section content */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-16 lg:gap-y-20 xl:gap-y-24 2xl:px-20 max-w-screen-2xl mx-auto">
+          <motion.div
+            ref={ref}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-16 lg:gap-y-20 xl:gap-y-24 2xl:px-20 max-w-screen-2xl mx-auto"
+            variants={containerVariants}
+            animate={inView ? "show" : "hidden"}
+          >
             {serviceCards.map(
               (card, idx) =>
                 card.is_published && (
-                  <LicenseCatCard key={card._id} card={card} idx={idx} />
+                  <motion.div key={card._id} variants={itemVariants}>
+                    <LicenseCatCard card={card} idx={idx} />
+                  </motion.div>
                 )
             )}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
