@@ -77,7 +77,7 @@ const ManagingDirectorSecond = () => {
           {/* right side content */}
           <div className="flex-1 relative bg-[#6bb943] lg:bg-white w-full">
             <Image
-              src={"/bg-image-2.jpg"}
+              src={"/bg-image-2.png"}
               alt="background image"
               width={600}
               height={800}
@@ -103,7 +103,6 @@ const ManagingDirectorSecond = () => {
                 inclusive culture focused.
               </p>
 
-              {/* btn */}
               <div className="mt-3 lg:mt-6 xl:mt-8 2xl:mt-10">
                 <button className="py-2 px-2 md:px-4 text-white bg-black rounded-md transition-colors ease-in-out duration-300 font-medium flex items-center gap-2 group text-sm lg:text-base group">
                   Enroll Now
@@ -131,6 +130,41 @@ const ManagingDirectorSecond = () => {
               />
             </motion.div>
           </div>
+          {/* 2nd version */}
+          {/* <div className="flex-1 relative bg-[#6bb943] lg:bg-white w-full">
+            <Image
+              src={"/BG_line-01.png"}
+              alt="background image"
+              width={600}
+              height={800}
+              className="hidden lg:block -rotate-[7deg]"
+            />
+            <div className="absolute right-8 top-7">
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 10,
+                  ease: "linear",
+                }}
+                className="absolute top-0 right-0"
+              >
+                <Image
+                  src={"/Line-01.png"}
+                  alt="service-icon"
+                  width={600}
+                  height={800}
+                />
+              </motion.div>
+              <Image
+                src={"/mgd-2.webp"}
+                alt="background image"
+                width={600}
+                height={800}
+                className="hidden lg:block max-h-[400px] object-contain relative z-40"
+              />
+            </div>
+          </div> */}
         </div>
       </div>
     </section>
