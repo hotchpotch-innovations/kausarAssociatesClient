@@ -17,10 +17,10 @@ export default function RootLayout({ children }) {
     <Providers>
       <MainContextProvider>
         {/* <ScrollProvider> */}
-          <ScrollToTop />
-          <HoverEffectNavbar />
-          {children}
-          <Footer></Footer>
+        <ScrollToTop />
+        <HoverEffectNavbar />
+        {children}
+        <Footer></Footer>
         {/* </ScrollProvider> */}
       </MainContextProvider>
       {/* <Toaster /> */}

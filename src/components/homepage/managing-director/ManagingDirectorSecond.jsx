@@ -1,14 +1,19 @@
 "use client";
 
-import useInView from "@/hooks/useInView";
 import Image from "next/image";
 import { FiArrowRight } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
 import { leftAnimVariant, topAnimVariant } from "./anim";
 import TextRevealAnim from "./TextRevealAnim";
+import useInView from "@/hooks/useInView";
 
 const ManagingDirectorSecond = () => {
-  const [ref, isInView] = useInView({ threshold: 0.4 });
+  const [ref, isInView] = useInView({
+    triggerOnce: true, // to grigger the animation only once
+    observerOpt: {
+      threshold: 0.4, // when 0.1 -> 10% of the component is in view
+    },
+  });
 
   return (
     <section ref={ref} className=" container mx-auto">

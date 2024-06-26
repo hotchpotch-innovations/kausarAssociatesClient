@@ -17,12 +17,19 @@ import { motion } from "framer-motion";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchSubCatData } from "../../../../provider/redux/features/serviceCatDataSlice";
 import ServicesCardLoader from "@/components/common/loader/ServicesCardLoader";
+import { containerVariants, itemVariants } from "./anim";
+import useInView from "@/hooks/useInView";
 
 const Services = ({ isBg }) => {
+  const [ref, inView] = useInView({
+    triggerOnce: false, // to grigger the animation only once
+    observerOpt: {
+      threshold: 0.1, // when 0.1 -> 10% of the component is in view
+    },
+  });
+
   const dispatch = useDispatch();
   const data = useSelector((state) => state.serviceCatData);
-
-  // console.log(data, "data");
 
   // Duplicate the single object 6 times if there is only 1 object in the array
   const serviceCards =
@@ -78,13 +85,20 @@ const Services = ({ isBg }) => {
             </motion.div>
           </div>
           {/* section content */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-16 lg:gap-y-20 xl:gap-y-24 2xl:px-20 max-w-screen-2xl mx-auto">
+          <motion.div
+            ref={ref}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-16 lg:gap-y-20 xl:gap-y-24 2xl:px-20 max-w-screen-2xl mx-auto"
+            variants={containerVariants}
+            animate={inView ? "show" : "hidden"}
+          >
             {serviceCards.map((card, idx) =>
               card.is_published ? (
-                <ServiceCatCard key={card._id} card={card} idx={idx} />
+                <motion.div key={card._id} variants={itemVariants}>
+                  <ServiceCatCard card={card} idx={idx} />
+                </motion.div>
               ) : null
             )}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
