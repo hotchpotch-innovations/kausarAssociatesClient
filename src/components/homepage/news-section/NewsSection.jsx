@@ -1,13 +1,8 @@
-"use client";
-
-import AbsoluteText from "@/components/common/absoluteText/AbsoluteText";
-import React from "react";
-import ArticleCard from "./ArticleCard";
-import { articleData } from "@/data";
-import { useState } from "react";
 import { SectionTitle } from "@/components/common/section-title/SectionTitle";
+import { articleData } from "@/data";
+import ArticleCard from "../bangla-articles-section/ArticleCard";
 
-const BanglaArticlesSection = () => {
+const NewsSection = () => {
   return (
     <section className="max-w-screen-2xl px-8 sm:px-10 md:px-12 lg:px-16 xl:px-20 2xl:px-0 mx-auto pb-8 sm:pb-12 md:pb-14 xl:pb-20 2xl:pb-24">
       <div>
@@ -21,7 +16,7 @@ const BanglaArticlesSection = () => {
               ></AbsoluteText> */}
               <SectionTitle
                 subtitleLabel="Law firm and company"
-                titleLabel="Articles"
+                titleLabel="News"
               />
             </div>
           </div>
@@ -39,4 +34,4 @@ const BanglaArticlesSection = () => {
   );
 };
 
-export default BanglaArticlesSection;
+export default NewsSection;

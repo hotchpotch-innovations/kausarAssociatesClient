@@ -5,7 +5,7 @@ import { SectionTitle } from "@/components/common/section-title/SectionTitle";
 
 const Team = () => {
   return (
-    <section>
+    <section className="max-w-screen-2xl mx-auto">
       <div className="content-container">
         <div>
           {/* <AbsoluteText text={"TEAM"} isTextWhite={false}></AbsoluteText> */}

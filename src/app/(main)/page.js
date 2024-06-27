@@ -7,6 +7,7 @@ import Incorporation from "@/components/homepage/incorporation/Incorporation";
 import Licensing from "@/components/homepage/licensing/Licensing";
 import ManagingDirector from "@/components/homepage/managing-director/ManagingDirector";
 import ManagingDirectorSecond from "@/components/homepage/managing-director/ManagingDirectorSecond";
+import NewsSection from "@/components/homepage/news-section/NewsSection";
 import OurClientSection from "@/components/homepage/our-client-section/OurClientSection";
 import ParticlesBackground from "@/components/homepage/particles-bg/ParticlesBackground";
 import Services from "@/components/homepage/services/Services";
@@ -30,6 +31,7 @@ export default function Home() {
       <TaxationSection></TaxationSection>
       {/* <GallerySection></GallerySection> */}
       <BanglaArticlesSection></BanglaArticlesSection>
+      <NewsSection />
       <VideoSection></VideoSection>
       <SkillHubSection></SkillHubSection>
       <OurClientSection></OurClientSection>

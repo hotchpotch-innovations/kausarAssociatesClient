@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import Slide from "./Slide";
 import { slideData } from "./slideFakeData";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -20,13 +20,13 @@ export default function SliderSecond() {
 
   useEffect(() => {
     import("swiper").then((SwiperModule) => {
-      SwiperModule.default.use([Autoplay, Navigation]);
+      SwiperModule.default.use([Autoplay, Pagination]);
       setSwiperLoaded(true);
     });
   }, []);
 
   if (!swiperLoaded) {
-    return <CarouselSkeletonLoader/>; // TODO: null will be replaced with skeleton loading
+    return <CarouselSkeletonLoader />; // TODO: null will be replaced with skeleton loading
   }
 
   return (
@@ -39,18 +39,13 @@ export default function SliderSecond() {
           autoplay={{
             delay: 4000,
             disableOnInteraction: false,
-            stopOnLastSlide: false,
           }}
           pagination={{
             clickable: true,
           }}
-          fadeEffect={{
-            crossFade: true,
-          }}
-          navigation={true}
-          modules={[Autoplay, Navigation]}
+          modules={[Autoplay, Pagination]}
           onSlideChange={handleSlideChange}
-          speed={0}
+          speed={1}
           className="mySwiper"
         >
           {slideData.map((data, idx) => (

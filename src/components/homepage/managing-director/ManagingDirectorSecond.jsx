@@ -75,7 +75,7 @@ const ManagingDirectorSecond = () => {
             </div>
           </motion.div>
           {/* right side content */}
-          <div className="flex-1 relative bg-[#6bb943] lg:bg-white w-full">
+          <div className="flex-1 relative bg-blue-600 lg:bg-white w-full">
             <Image
               src={"/bg-image-2.png"}
               alt="background image"

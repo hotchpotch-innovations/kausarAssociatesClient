@@ -18,6 +18,10 @@ export const navLinks = [
         menu: "Team",
         link: "/about/team/",
       },
+      {
+        menu: "FAQ",
+        link: "/faq",
+      },
     ],
   },
   {
