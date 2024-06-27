@@ -63,11 +63,11 @@ export default function SecondSlideContent({
           variants={slideIn}
           initial="initial"
           whileInView={"animate"}
-          className="flex flex-col gap-5 md:gap-8 xl:gap-10 md:w-[60%] 2xl:w-[50%]"
+          className="flex flex-col gap-5 md:gap-8 xl:gap-10 md:w-[60%] 2xl:w-[50%] text-white"
         >
           <h1 className="text-2xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl xl:leading-snug font-bold">
-            <span className="text-blue-500">Bangladesh</span> | Highlights of
-            Finance Bill 2024
+            <span className="">Bangladesh</span> | Highlights of Finance Bill
+            2024
           </h1>
           <ul className="list-disc marker:text-blue-400 pl-8">
             <li className="text-sm lg:text-base xl:text-lg xl:leading-snug">

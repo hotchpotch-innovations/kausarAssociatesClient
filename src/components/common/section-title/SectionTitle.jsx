@@ -1,3 +1,12 @@
+/*
+ * @params iconColor -> used to change subtitle icon color ===> type: string
+ * @params subtitleColor -> used to change subtitle text color ===> type: string
+ * @paramas containerStyle -> main purpus is to give container margin top but can be used to give other styles. Landing pages require margin top so change it carefully ===> type: string
+ * @params contentCenter -> used to make the component data align center or start ===> type: boolean
+ * @params subtitleLabel -> is the content text of the subtitle ===> type: string
+ * @parmas titleLabel -> is the content text of the title ===> type: string
+ */
+
 export const SectionTitle = ({
   iconColor = "bg-blue-500",
   subtitleColor = "text-blue-600",
