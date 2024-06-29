@@ -62,7 +62,7 @@ const Slider = () => {
         spaceBetween={50}
         slidesPerView={slidesPerView}
         // initialSlide={3}
-        pagination={{ clickable: true }}
+        // pagination={{ clickable: true }}
         autoplay={{
           delay: 3500,
           disableOnInteraction: false,

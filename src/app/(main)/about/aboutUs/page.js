@@ -22,7 +22,7 @@ const page = () => {
       </div>
       <TitleSection></TitleSection>
       <Values></Values>
-      <FAQ></FAQ>
+      {/* <FAQ></FAQ> */}
     </section>
   );
 };
