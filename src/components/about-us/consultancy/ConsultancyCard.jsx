@@ -1,5 +1,6 @@
 "use client";
 
+import ConsultancyCardLoader from "@/components/common/loader/ConsultancyCardLoader";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
 import { BiSolidFileDoc } from "react-icons/bi";
@@ -51,7 +52,7 @@ const ConsultancyCard = ({ data, idx }) => {
     }
   }, [controls]);
 
-  if (isLoading) return <p>Loading</p>;
+  if (isLoading) return <ConsultancyCardLoader />;
 
   return (
     <div
