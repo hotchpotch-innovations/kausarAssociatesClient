@@ -4,13 +4,15 @@ import Consultancy from "./Consultancy";
 import Image from "next/image";
 import taxImage from "@/assets/images/tax.jpeg";
 import { SectionTitle } from "@/components/common/section-title/SectionTitle";
+import ConsultancyCard from "./ConsultancyCard";
+import { consultancyCardsData } from "@/data";
 
 const OurConsultancy = () => {
   const content =
     "The first step involves a free consultation where we sit down with you and thoroughly review your situation in order to discuss your available options";
   return (
     <section className="content-container">
-      <div className="mb-16 md:mb-28 lg:mb-32">
+      <div className="mb-5 md:pb-2">
         {/* <AbsoluteText
           isTextCenter={true}
           isTextWhite={false}
@@ -23,7 +25,16 @@ const OurConsultancy = () => {
           titleLabel="Our Consultancy Process"
         />
       </div>
-      <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
+      {/* TODO: process / methodologies page will be like https://cpweb.dev/ngo/3/ this websites volunteer page. */}
+      {/* test */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-screen-lg mx-auto justify-center">
+        {consultancyCardsData.map((data, idx) => (
+          <ConsultancyCard key={idx} data={data} idx={idx} />
+        ))}
+      </div>
+
+      {/* previous design */}
+      {/* <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
         <div className=" mb-6 md:mb-0 lg:mb-0">
           <Consultancy
             serial={"01"}
@@ -69,7 +80,7 @@ const OurConsultancy = () => {
             isTextEnd={false}
           />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

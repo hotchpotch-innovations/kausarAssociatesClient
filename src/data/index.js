@@ -612,3 +612,22 @@ export const teamCardData = [
 ];
 
 export const articleData = [1, 2, 3, 4, 5, 6];
+
+export const consultancyCardsData = [
+  {
+    label: "Free Consultancy",
+    desc: "The first step involves a free consultation where we sit down with you and thoroughly review your situation in order to discuss your available options",
+  },
+  {
+    label: "Submit file",
+    desc: "The first step involves a free consultation where we sit down with you and thoroughly review your situation in order to discuss your available options",
+  },
+  {
+    label: "Prepare Documents",
+    desc: "The first step involves a free consultation where we sit down with you and thoroughly review your situation in order to discuss your available options",
+  },
+  {
+    label: "Finally",
+    desc: "The first step involves a free consultation where we sit down with you and thoroughly review your situation in order to discuss your available options",
+  },
+];
