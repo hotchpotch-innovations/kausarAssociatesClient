@@ -15,6 +15,10 @@ export const navLinks = [
         link: "/about/aboutUs/",
       },
       {
+        menu: "Chairman Message",
+        link: "/about/chairman-message/",
+      },
+      {
         menu: "Team",
         link: "/about/team/",
       },

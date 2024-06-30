@@ -15,7 +15,6 @@ const page = () => {
       <AboutUsBanner />
       <WhoWeAre />
       {/* <SolveCases /> */}
-      <PresidentMessage />
       <div>
         <VisionMission />
         <OurConsultancy />
