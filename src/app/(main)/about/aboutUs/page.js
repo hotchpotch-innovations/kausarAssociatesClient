@@ -14,13 +14,13 @@ const page = () => {
     <section>
       <AboutUsBanner />
       <WhoWeAre />
-      <SolveCases />
+      {/* <SolveCases /> */}
       <PresidentMessage />
       <div>
         <VisionMission />
         <OurConsultancy />
       </div>
-      <TitleSection></TitleSection>
+      {/* <TitleSection></TitleSection> */}
       <Values></Values>
       {/* <FAQ></FAQ> */}
     </section>

@@ -1,5 +1,6 @@
 import BanglaArticlesSection from "@/components/homepage/bangla-articles-section/BanglaArticlesSection";
 import BottomSection from "@/components/homepage/bottom-section/BottomSection";
+import CaseStudies from "@/components/homepage/case-studies/CaseStudies";
 import GallerySection from "@/components/homepage/gallery-section/GallerySection";
 import Hero from "@/components/homepage/hero/Hero";
 import HubSection from "@/components/homepage/hub-section/HubSection";
@@ -29,6 +30,7 @@ export default function Home() {
       <Team></Team>
       <HubSection></HubSection>
       <TaxationSection></TaxationSection>
+      <CaseStudies />
       {/* <GallerySection></GallerySection> */}
       <BanglaArticlesSection></BanglaArticlesSection>
       <NewsSection />
