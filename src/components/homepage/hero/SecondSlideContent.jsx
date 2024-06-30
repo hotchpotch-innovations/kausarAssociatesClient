@@ -69,7 +69,7 @@ export default function SecondSlideContent({
             <span className="">Bangladesh</span> | Highlights of Finance Bill
             2024
           </h1>
-          <ul className="list-disc marker:text-blue-400 pl-8">
+          <ul className="list-disc marker:text-white pl-8">
             <li className="text-sm lg:text-base xl:text-lg xl:leading-snug">
               This document aims to highlight the major changes to the Income
               Tax Act, 2023 and additional SROs as proposed by the Finance Bill
@@ -96,7 +96,7 @@ export default function SecondSlideContent({
             height={1600}
             priority={true}
             sizes="(max-width: 1280px) 100vw, 50vw"
-            className="object-contain max-h-[500px] 2xl:max-h-[600px]"
+            className="object-contain max-h-[250px] sm:max-h-[300px] md:max-h-[500px] 2xl:max-h-[600px]"
           />
         </motion.div>
       </div>

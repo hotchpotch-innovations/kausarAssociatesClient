@@ -16,7 +16,10 @@ const ManagingDirectorSecond = () => {
   });
 
   return (
-    <section ref={ref} className=" container mx-auto">
+    <section
+      ref={ref}
+      className="container mx-auto mt-[25%] sm:mt-[13%] md:mt-[10%] 2xl:mt-[7%]"
+    >
       <div className="px-8 py-6 lg:px-12 md:py-8 xl:px-24 lg:py-16 xl:py-20 2xl:py-28">
         <div className="flex flex-col md:flex-row gap-8 items-center justify-between">
           {/* left side content */}

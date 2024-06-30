@@ -32,8 +32,8 @@ export default function Home() {
       <TaxationSection></TaxationSection>
       <CaseStudies />
       {/* <GallerySection></GallerySection> */}
-      <BanglaArticlesSection></BanglaArticlesSection>
       <NewsSection />
+      <BanglaArticlesSection></BanglaArticlesSection>
       <VideoSection></VideoSection>
       <SkillHubSection></SkillHubSection>
       <OurClientSection></OurClientSection>
