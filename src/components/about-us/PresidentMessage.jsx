@@ -2,15 +2,15 @@ import React from "react";
 
 const PresidentMessage = () => {
   return (
-    <section>
+    <section className="max-w-screen-xl mx-auto">
       <div className="content-container">
         <div className="w-full flex justify-between items-end mb-6">
           <div className="w-36 h-44 border"></div>
-          <div className="text-base md:text-lg text-gray-600 font-medium uppercase">
+          <div className="text-base md:text-lg 2xl:text-xl text-gray-600 font-medium uppercase">
             Chairman MESSAGE
           </div>
         </div>
-        <div className="text-xs md:text-sm lg:text-sm text-gray-500 text-justify mb-8">
+        <div className="text-xs md:text-sm lg:text-sm 2xl:text-lg text-gray-500 text-justify mb-8">
           <p className="mb-4">
             Lеt mе introducе you to Kausar & Associatеs Ltd a corporatе law firm
             locatеd in Dhaka, Bangladеsh. Wе takе pridе in our commitmеnt, to
@@ -33,7 +33,7 @@ const PresidentMessage = () => {
           </p>
         </div>
         <div className="text-gray-500 text-start">
-          <p className="text-lg md:text-xl lg:text-xl text-black">
+          <p className="text-base md:text-lg 2xl:text-xl text-black">
             Md Kausar Hossain
           </p>
           <p className="text-xs md:text-sm lg:text-sm">Managing Director</p>

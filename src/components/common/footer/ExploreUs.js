@@ -13,31 +13,31 @@ const ExploreUs = () => {
         </div>
 
         <div className="my-2 text-xs">
-        <ul>
-          <li className="leading-5 hover:text-blue-400 transition-all duration-300 ease-in-out cursor-pointer">
-            <Link href={"/"}>Web mail</Link>
-          </li>
-          <li className="leading-5 hover:text-blue-400 transition-all duration-300 ease-in-out cursor-pointer">
-            <Link href={"/"}>WhatsApp</Link>
-          </li>
-          <li className="leading-5 hover:text-blue-400 transition-all duration-300 ease-in-out cursor-pointer">
-            <Link href={"/"}>Messenger</Link>
-          </li>
-        </ul>
+          <ul>
+            <li className="leading-5 hover:text-blue-400 transition-all duration-300 ease-in-out cursor-pointer">
+              <Link href={"/"}>Web mail</Link>
+            </li>
+            <li className="leading-5 hover:text-blue-400 transition-all duration-300 ease-in-out cursor-pointer">
+              <Link href={"/"}>WhatsApp</Link>
+            </li>
+            <li className="leading-5 hover:text-blue-400 transition-all duration-300 ease-in-out cursor-pointer">
+              <Link href={"/"}>Messenger</Link>
+            </li>
+          </ul>
         </div>
         {/* <div className='w-32 h-32 border'></div> */}
         <div className="mt-2">
           <p>Explore Us more in social-</p>
         </div>
         <div className="mt-2">
-          <Link href="/">
-            <FaFacebookF className="inline ml-2 lg:ml-4 text-sm lg:text-base" />
+          <Link href="/" className="group">
+            <FaFacebookF className="inline ml-2 lg:ml-4 text-sm lg:text-base group-hover:text-blue-500 transition duration-300 ease-in" />
           </Link>
-          <Link href="/">
-            <FaTwitter className="inline ml-2 lg:ml-4 text-base lg:text-lg" />
+          <Link href="/" className="group">
+            <FaTwitter className="inline ml-2 lg:ml-4 text-base lg:text-lg group-hover:text-blue-500 transition duration-300 ease-in" />
           </Link>
-          <Link href="/">
-            <FaYoutube className="inline ml-2 lg:ml-4 text-base lg:text-lg" />
+          <Link href="/" className="group">
+            <FaYoutube className="inline ml-2 lg:ml-4 text-base lg:text-lg group-hover:text-blue-500 transition duration-300 ease-in" />
           </Link>
         </div>
       </div>
