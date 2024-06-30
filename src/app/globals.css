@@ -402,3 +402,7 @@ body {
 .service-cat-card:hover img {
   transform: rotateY(180deg);
 }
+
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}

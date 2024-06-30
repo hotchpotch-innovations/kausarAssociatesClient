@@ -11,7 +11,7 @@ const Hero = () => {
         alt="background image"
         width={4000}
         height={1000}
-        className="absolute top-0 left-0 h-[660px] md:h-[380px] lg:h-[135%] 2xl:h-[130%] w-full"
+        className="absolute top-0 left-0 h-[750px] sm:h-[120%] md:h-[130%] lg:h-[130%] xl:h-[127%] 2xl:h-[125%] w-full"
       />
       <div>
         {/* <Slider /> */}
