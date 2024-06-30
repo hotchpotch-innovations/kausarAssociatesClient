@@ -6,7 +6,7 @@ import { faqData } from "../../../../public/fake-data/faq-data/faqFakeData";
 const FaqPage = () => {
   return (
     <section className="max-w-screen-xl mx-auto px-8 sm:px-10 md:px-12 lg:px-20 xl:px-44 2xl:px-0 py-7 sm:py-9 md:py-12 lg:py-14 xl:py-16 2xl:py-20">
-      <div className="flex flex-col-reverse md:flex-row gap-8 justify-between ">
+      <div className="flex flex-col-reverse md:flex-row gap-8 justify-between xl:min-h-[600px] 2xl:min-h-[630px]">
         {/* left section */}
         <div className="flex-1">
           <SectionTitle
