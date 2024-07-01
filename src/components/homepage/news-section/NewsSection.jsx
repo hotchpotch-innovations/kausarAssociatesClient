@@ -4,7 +4,7 @@ import ArticleCard from "../bangla-articles-section/ArticleCard";
 
 const NewsSection = () => {
   return (
-    <section className="max-w-screen-2xl px-8 sm:px-10 md:px-12 lg:px-16 xl:px-20 2xl:px-0 mx-auto pb-8 sm:pb-12 md:pb-14 xl:pb-20 2xl:pb-24">
+    <section className="max-w-screen-2xl px-8 sm:px-10 md:px-12 lg:px-16 xl:px-20 2xl:px-0 mx-auto pb-8 pt-12 sm:pb-12 sm:pt-14 md:pb-14 md:pt-16 xl:pb-20 xl:pt-24 2xl:pb-24 2xl:pt-28">
       <div>
         {/* Head Section  */}
         <div className="w-full">

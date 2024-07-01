@@ -3,9 +3,11 @@ import React from "react";
 
 const HubSection = () => {
   return (
-    <section>
-      <div className=" bg-[url(https://c1.wallpaperflare.com/preview/640/450/410/man-male-face-arm.jpg)] bg-cover bg-top bg-no-repeat bg-fixed">
-        <div className="w-full h-auto bg-gradient-to-l from-gray-700/70 via-gray-700/60 to-gray-700/70 bg-cover py-4 md:py-8 xl:py-12">
+    <section className="bg-[url('/13.png')] py-24 sm:py-14 md:py-20 lg:py-[120px] xl:py-[150px] 2xl:py-[250px] bg-no-repeat bg-cover w-full">
+      <div className="">
+        {/* <div className=" bg-[url(https://c1.wallpaperflare.com/preview/640/450/410/man-male-face-arm.jpg)] bg-cover bg-top bg-no-repeat bg-fixed"> */}
+        {/* <div className="w-full h-auto bg-gradient-to-l from-gray-700/70 via-gray-700/60 to-gray-700/70 bg-cover py-4 md:py-8 xl:py-12"> */}
+        <div className="w-full h-auto">
           <div className="content-container max-w-screen-2xl mx-auto ">
             <div className="flex flex-col md:flex-row gap-20 sm:gap-16 md:gap-9 lg:gap-11 xl:gap-16 2xl:gap-20 items-center justify-between ">
               {/* left side data */}

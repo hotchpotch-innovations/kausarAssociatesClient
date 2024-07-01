@@ -91,7 +91,7 @@ const Services = ({ isBg }) => {
             variants={containerVariants}
             animate={inView ? "show" : "hidden"}
           >
-            {serviceCards.map((card, idx) =>
+            {serviceCards?.map((card, idx) =>
               card.is_published ? (
                 <motion.div key={card._id} variants={itemVariants}>
                   <ServiceCatCard card={card} idx={idx} />

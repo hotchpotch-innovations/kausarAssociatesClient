@@ -91,7 +91,7 @@ const Licensing = ({ isBg }) => {
             variants={containerVariants}
             animate={inView ? "show" : "hidden"}
           >
-            {serviceCards.map(
+            {serviceCards?.map(
               (card, idx) =>
                 card.is_published && (
                   <motion.div key={card._id} variants={itemVariants}>

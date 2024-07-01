@@ -145,7 +145,7 @@ export const navLinks = [
   {
     _id: "nav007",
     menu: "Contact",
-    link: "/",
+    link: "/contact",
     submenu: [],
   },
 ];
